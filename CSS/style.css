@@ -1,9 +1,7 @@
 *
-body {
+ {
     margin: 0;
     padding: 0;
-    font-family: 'Ariel' sanserif;
-    
 }
 
 header {
@@ -14,28 +12,23 @@ header {
 
 }
 
-ul {
+.main-nav {
     float: right;
-    list-style-type: none;
+    list-style: none;
     margin-top: 30px;
 }
- ul li {
+
+ .main-nav li {
      display: inline-block;
 
  }
 
- ul li a {
+ .main-nav li a {
+     color: black;
      text-decoration: none;
-     color: #fff;
-     padding: 5px 15px;
-     border: 2px solid #fff;
-     transition: 0.6s ease;
- }
-
- ul li a:hover {
-     background-color: #fff;
-     color: #000;
-
+     padding: 5px 20px;
+     font-family: "Roboto", sans-serif;
+     font-size: 15px;
  }
 
  .logo img {
