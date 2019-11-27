@@ -1,16 +1,132 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: bq;
+    src: url('../fonts/blackquality.ttf')
+}
+
 *
 {
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-image: url(https://i.ibb.co/gMhPXZD/backgrounddesk.jpg);
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+body.index {
+    background-image: url(https://i.ibb.co/zF4SxxG/office-865091.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
-
 }
 
 .main-nav {
@@ -19,75 +135,177 @@ header {
     margin-top: 30px;
 }
 
- .main-nav li {
-     display: inline-block;
+.main-nav li {
+    display: inline-block;
+    margin: 10px 5px;
+}
 
- }
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    font-family: bq;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+}
 
- .main-nav li a {
-     color: black;
-     text-decoration: none;
-     padding: 5px 20px;
-     font-family: "Roboto", sans-serif;
-     font-size: 15px;
- }
+.main-nav li a:hover {
+    background: gray;
+    border-bottom: 1px solid gray;
+    transition: .4s;
+}
 
- .logo img {
-     width: 400px;
-     height: auto;
-     margin-top: 0px;
-     float: left;
- }
+.logo img {
+    width: 400px;
+    height: auto;
+    float: left;
+}
 
- .row {
-     max-width: 1200px;
-     margin: auto;
+body {
+    font-family: Arial;
+}
 
- }
+.row {
+    max-width: 1200px;
+    margin: auto;
+}
 
- .hero {
-     color: black;
-     font-family: sans-serif;
-     text-transform: uppercase;
-     text-align: center;
-     margin-top: 300px;
- }
+.hero {
+    position: absolute;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 0;
+}
 
- .hero h1 {
-    font-size: 70px;
-    margin: 25px;
- }
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 315px;
+}
 
- .button {
-     margin-top: 30px;
-     margin-left: 440px;
- }
+.button {
+    margin-top: 30px;
+    margin-left: 220px;
+}
 
- .btn {
-     border: 1px solid black;
-     padding: 10px 30px;
-     color: black;
-     text-decoration: none;
-     margin-right: 5px;
-     font-size: 13px;
-     text-transform: uppercase;
+.btn {
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.btn-one {
+    font-family: "Roboto", sans-serif;
+}
 
- }
+.btn-two {
+    font-family: "Roboto", sans-serif;
+}
 
- .btn-one {
-     font-family: "Roboto", sans-serif;
- }
+.btn-one:hover {
+    background-color: gray;
+    transition: all 0.5s ease-in;
+}
 
- .btn-one:hover {
-     background-color: white;
-     transition: all 0.5s ease-in;
- }
+.btn-two:hover {
+    background-color: gray;
+    transition: all 0.5s ease-in;
+}
 
- .btn-two {
-     font-family: "Roboto", sans-serif;
- }
+body.about {
+    background-image: url(https://cdn.pixabay.com/photo/2014/04/07/20/27/texture-318907__340.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;   
+}
 
- .btn-two:hover {
-     background-color: white;
-     transition: all 0.5s ease-in;
- }
+.img-me {
+    width: 250px;
+    float: left;
+    margin-top: 175px;
+    margin-right: 10px;
+}
+
+p {
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 475px;
+    right: 150px;
+    top: 180px;
+    word-spacing: 5px;
+    line-height: 45px;
+}
+
+body.portfolio {
+    background-image: url(https://cdn.pixabay.com/photo/2014/04/07/20/27/texture-318907__340.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+body.contact {
+    background-image: url(https://cdn.pixabay.com/photo/2018/02/24/22/11/phone-3179343__340.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-me {
+    position: absolute;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 0; 
+}
+
+h2 {
+    color: black;
+    font-family: 'Notable', sans-serif;
+    font-size: 50px;
+    float: left;
+    margin-top: 210px;
+    margin-left: 80px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 95px;
+    margin-top: 95px;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    list-style: none;
+    margin-top: 500px;
+    margin-left: 620px;
+}
+
+.social li {
+    margin: 5px 15px;
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px 5px;
+    transition: .5s;
+    left: 350%;  
+}
+
+.social li:hover {
+    color: white;
+    transition: .5s;
+}
