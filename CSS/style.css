@@ -168,7 +168,7 @@ body.index {
 }
 
 .main-nav li a:hover {
-    background: gray;
+    background: rgb(66, 208, 233);
     border-bottom: 1px solid #839192;
     transition: .4s;
 }
@@ -227,12 +227,12 @@ h1 {
 }
 
 .btn-one:hover {
-    background-color: #839192;
+    background-color: rgb(66, 208, 233);
     transition: all 0.5s ease-in;
 }
 
 .btn-two:hover {
-    background-color: #839192;
+    background-color: rgb(66, 208, 233);
     transition: all 0.5s ease-in;
 }
 
@@ -298,7 +298,7 @@ h2 {
 }
 
 h3 {
-    color: #fdfefe;
+    color: rgb(66, 208, 233);
     font-family: 'Merienda', cursive;
     font-size: 95px;
     margin-top: 95px;
@@ -334,3 +334,189 @@ h3 {
     transition: .5s;
 }
 
+.container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto;
+}
+
+.container .box {
+    position: relative;
+    top: 0px;
+    width: calc(400px - 30px);
+    height: calc(400px - 80px);
+    background: rgb(66, 208, 233);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(37, 34, 34);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container .box .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: white;
+}
+
+.container .box:hover .icon .fa {
+    font-size: 40px;
+}
+
+.container .box .content {
+    position: absolute;
+    top: 30px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 90px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+.container .box .content li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+}
+
+.container .box .content-last {
+    position: absolute;
+    top: 0px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 140px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+.container .box .content-last li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+}
+
+h7 {
+    position: static;
+    top: 0px;
+    text-align: center;
+    height: 50px;
+    font-size: 70px;
+    padding: 150px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(66, 208, 233);
+}
+
+.container-last {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto;
+}
+
+
+.container-last .loginbox {
+    position: relative;
+    top: 0px;
+    width: 320px;
+    height: 420px;
+    background: rgb(66, 208, 233);
+    top: 25%;
+    left: 35%;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 70px 30px;
+}
+
+h9 {
+    margin: 0;
+    padding: 0 50px 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h10 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+
+}
+
+h11 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+.loginbox a:hover {
+    color: white;
+}
