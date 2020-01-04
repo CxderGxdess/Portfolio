@@ -138,6 +138,9 @@ body.index {
     background: gray;
     color: white;
     padding: 35px;
+    background: url(https://i.ibb.co/9hmWhBQ/pexels-photo-1114703.jpg) no-repeat;
+    background-size: cover;
+
 }
 
 .landing-page--bg-white {
@@ -437,7 +440,7 @@ h7 {
 .container-last {
     position: relative;
     width: 1200px;
-    height: 300px;
+    height: 200px;
     margin: 100px auto;
 }
 
@@ -445,38 +448,42 @@ h7 {
 .container-last .loginbox {
     position: relative;
     top: 0px;
-    width: 320px;
+    width: 350px;
     height: 420px;
-    background: rgb(66, 208, 233);
+    background: black;
     top: 25%;
     left: 35%;
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
-    padding: 70px 30px;
+    padding: 50px 30px;
+
 }
 
-h9 {
-    margin: 0;
+.loginbox  h9{
+    margin: -50px;
+    margin-bottom: 20px;
     padding: 0 50px 20px;
-    text-align: center;
-    font-size: 22px;
+    text-align: left;
+    font-size: 29px;
+    font-family: 'Merienda', cursive;
 }
 
-h10 {
+.loginbox h10 {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(66, 208, 233);
+
+}
+
+.loginbox h11 {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    color: black;
-
-}
-
-h11 {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    color: black;
+    color: rgb(66, 208, 233);
 }
 
 .loginbox input {
@@ -490,7 +497,7 @@ h11 {
     background: transparent;
     outline: none;
     height: 40px;
-    color: black;
+    color: white;
     font-size: 16px;
 }
 
@@ -506,7 +513,7 @@ h11 {
 
 .loginbox input[type="submit"]:hover {
     cursor: pointer;
-    background: black;
+    background: rgb(66, 208, 233);
     color: white;
 }
 
@@ -514,9 +521,10 @@ h11 {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: black;
+    color: rgb(66, 208, 233);
 }
 
 .loginbox a:hover {
     color: white;
 }
+
